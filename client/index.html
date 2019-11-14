@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Satellite Inspector</title>
+  <link rel="stylesheet" href="./styles/main.scss">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/@joergdietrich/leaflet.terminator"></script>
+  <script src="./script/application.js"></script>
+</head>
+<body>
+  <form id="satellite" name="satellite">
+    <label>
+      <div>Line 1:</div>
+      <input type="text" name="line1" style="width: 100%;" value="1 41465U 16026B   19063.74858464  .00001748  00000-0  56311-4 0  9990">
+    </label>
+
+    <label>
+      <div>Line 2:</div>
+      <input type="text" name="line2" style="width: 100%;" value="2 41465  97.2011 321.8769 0012148 133.4827 312.1362 15.33454717159263">
+    </label>
+
+    <input type="text" name="date" value="Thu Mar 07 2019 04:00:00 GMT+0400">
+    <br>
+    <button type="submit">GO</button>
+  </form>
+
+  <div id="mapid" class="map"></div>
+</body>
+</html>
